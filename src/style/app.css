@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+* {
+  -webkit-appearance: none;
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(195, 195, 195);
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #18171b;
+  height: 100vh;
+  width: 100vw;
+}
+.App .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.App .container h4 {
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.App .container .PasswordPut {
+  background-color: rgb(54, 54, 54);
+  position: relative;
+  width: 420px;
+  height: 50px;
+  padding: 5px 10px;
+}
+.App .container .PasswordPut input {
+  height: 100%;
+  width: 95%;
+  outline: none;
+  border: none;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 1.3rem;
+}
+.App .container .PasswordPut .input-icon {
+  position: absolute;
+  right: 15px;
+  top: 25%;
+}
+.App .container-body {
+  background-color: rgb(54, 54, 54);
+  height: 500px;
+  width: 420px;
+}
+.App .container-body .bar {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 0;
+  margin: 10px 5%;
+  padding-top: 25px;
+}
+.App .container-body .bar .lenght {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.App .container-body .bar .lenght span:first-child {
+  color: white;
+  font-size: 1.1rem;
+}
+.App .container-body .bar .lenght span:last-child {
+  color: #a4ffaf;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.App .container-body .bar .slider {
+  position: relative;
+}
+.App .container-body .bar .slider .range {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.App .container-body .bar .slider .range::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 8px;
+  cursor: pointer;
+  background: #18171b;
+}
+.App .container-body .bar .slider .range::-webkit-progress-bar {
+  height: 15px;
+  border-radius: 15px;
+}
+.App .container-body .bar .slider .range::-webkit-slider-thumb {
+  height: 25px;
+  width: 25px;
+  margin-top: -8px;
+  margin-left: -1px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgb(110, 131, 131);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+}
+.App .container-body .bar .slider .range::-webkit-slider-thumb:hover {
+  background-color: rgb(54, 54, 54);
+  border: 2px solid #a4ffaf;
+  opacity: 1;
+}
+.App .container-body .checkboxes {
+  margin: 20px 10px;
+}
+.App .container-body .checkboxes .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.App .container-body .checkboxes .checkbox:hover input {
+  border: 2px solid #a4ffaf;
+}
+.App .container-body .checkboxes .checkbox input {
+  margin-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.App .container-body .checkboxes .checkbox input:hover {
+  border: 2px solid #a4ffaf;
+}
+.App .container-body .checkboxes .checkbox input:checked {
+  background-position: center;
+  background-image: url("./images/check-alt-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+.App .container-body .checkboxes .checkbox input:checked::after {
+  content: "";
+  border: none;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("./images/check-alt-svgrepo-com.svg");
+}
+.App .container-body .bar-container {
+  background-color: #18171b;
+  width: 95%;
+  margin: 20px 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.App .container-body .generate-button {
+  width: 95%;
+  padding: 20px 10px;
+  margin: 20px 10px;
+  background-color: #a4ffaf;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(54, 54, 54);
+  fill: rgb(54, 54, 54);
+}
+.App .container-body .generate-button:hover {
+  border: 1px solid black;
+  background-color: rgb(54, 54, 54);
+  border-color: #a4ffaf;
+  color: #a4ffaf;
+}
+.App .container-body .generate-button:hover .generate-icon {
+  fill: #a4ffaf;
+}
+.App .container-body .generate-button .generate-icon {
+  margin-left: 15px;
+  margin-top: -1px;
+  fill: rgb(54, 54, 54);
+}/*# sourceMappingURL=app.css.map */
